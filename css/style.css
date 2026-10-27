@@ -1,1 +1,67 @@
+/* ===== Brand colors ===== */
+:root {
+  --lavender-dark: #5B3F8C;  /* buttons, headings */
+  --lavender: #E6DBF5;       /* panels */
+  --lavender-soft: #FBF7FF;  /* light section backgrounds */
+  --pink: #F9DCE8;
+  --pink-soft: #FDEFF5;
+  --pink-accent: #C2407A;    /* script logo */
+  --yellow: #FFF4CC;
+  --blue: #DCEBFA;
+  --mint: #DDF2E4;
+  --ink: #2E2540;            /* main text */
+  --ink-soft: #3D3352;       /* body text */
+  --white: #FFFFFF;
 
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+
+  --radius: 24px;
+  --max-width: 1200px;
+}
+
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--lavender-dark); }
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--lavender-dark);
+  color: var(--white);
+}
+
+.btn-outline {
+  background: var(--white);
+  color: var(--lavender-dark);
+  border: 2px solid var(--lavender-dark);
+}
