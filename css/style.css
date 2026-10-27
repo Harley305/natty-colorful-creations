@@ -585,6 +585,15 @@ h1, h2, h3 {
   .seasonal-text h2 {
     font-size: 32px;
   }
+    .split {
+    gap: 28px;
+  }
+  .split-photo {
+    min-height: 260px;
+  
+  .split-text h2 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 760px) {
