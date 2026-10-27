@@ -66,6 +66,22 @@ h1, h2, h3 {
   border: 2px solid var(--lavender-dark);
 }
 
+.btn-soft {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--pink);
+  color: #8A2E5A;
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn-soft:hover {
+  background: #F4C6D8;
+}
+
 /* ===== Announcement bar ===== */
 .announcement {
   background: var(--lavender-dark);
@@ -342,37 +358,6 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
-/* ===== Phone & tablet layout (keep at the bottom) ===== */
-@media (max-width: 960px) {
-  .hero-photo {
-    min-height: 280px;
-    border-radius: var(--radius) var(--radius) 0 0;
-  }
-  .hero-panel {
-    border-radius: 0 0 var(--radius) var(--radius);
-    padding: 36px 24px;
-  }
-  .hero-panel h1 {
-    font-size: 34px;
-  }
-  .seasonal-text {
-    padding: 36px 24px;
-  }
-  .seasonal-text h2 {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 760px) {
-  .header-inner {
-    flex-direction: column;
-  }
-  .main-nav {
-    justify-content: center;
-    gap: 14px 18px;
-  }
-}
-
 /* ===== Customer Favorites ===== */
 .favorites {
   background: var(--lavender-soft);
@@ -438,18 +423,33 @@ h1, h2, h3 {
   color: var(--lavender-dark);
 }
 
-.btn-soft {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 12px 22px;
-  border-radius: 999px;
-  background: var(--pink);
-  color: #8A2E5A;
-  font-weight: 800;
-  font-size: 15px;
-  text-decoration: none;
+/* ===== Phone & tablet layout (keep at the bottom) ===== */
+@media (max-width: 960px) {
+  .hero-photo {
+    min-height: 280px;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .hero-panel {
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 36px 24px;
+  }
+  .hero-panel h1 {
+    font-size: 34px;
+  }
+  .seasonal-text {
+    padding: 36px 24px;
+  }
+  .seasonal-text h2 {
+    font-size: 32px;
+  }
 }
 
-.btn-soft:hover {
-  background: #F4C6D8;
+@media (max-width: 760px) {
+  .header-inner {
+    flex-direction: column;
+  }
+  .main-nav {
+    justify-content: center;
+    gap: 14px 18px;
+  }
 }
