@@ -138,17 +138,6 @@ h1, h2, h3 {
   padding: 12px 22px;
 }
 
-/* ===== Phone layout ===== */
-@media (max-width: 760px) {
-  .header-inner {
-    flex-direction: column;
-  }
-  .main-nav {
-    justify-content: center;
-    gap: 14px 18px;
-  }
-}
-
 /* ===== Hero ===== */
 .hero {
   background: var(--lavender-soft);
@@ -217,21 +206,6 @@ h1, h2, h3 {
   gap: 12px;
 }
 
-/* Hero on phones: stack photo over panel */
-@media (max-width: 960px) {
-  .hero-photo {
-    min-height: 280px;
-    border-radius: var(--radius) var(--radius) 0 0;
-  }
-  .hero-panel {
-    border-radius: 0 0 var(--radius) var(--radius);
-    padding: 36px 24px;
-  }
-  .hero-panel h1 {
-    font-size: 34px;
-  }
-}
-
 /* ===== Shared section styles ===== */
 .section {
   padding: 64px 0;
@@ -258,7 +232,7 @@ h1, h2, h3 {
   border-radius: 4px;
 }
 
-/* Background color helpers (reused later) */
+/* Background color helpers */
 .bg-pink      { background: var(--pink); }
 .bg-pink-soft { background: var(--pink-soft); }
 .bg-blue      { background: var(--blue); }
@@ -368,11 +342,33 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
+/* ===== Phone & tablet layout (keep at the bottom) ===== */
 @media (max-width: 960px) {
+  .hero-photo {
+    min-height: 280px;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .hero-panel {
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 36px 24px;
+  }
+  .hero-panel h1 {
+    font-size: 34px;
+  }
   .seasonal-text {
     padding: 36px 24px;
   }
   .seasonal-text h2 {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header-inner {
+    flex-direction: column;
+  }
+  .main-nav {
+    justify-content: center;
+    gap: 14px 18px;
   }
 }
