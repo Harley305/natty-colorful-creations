@@ -231,3 +231,81 @@ h1, h2, h3 {
     font-size: 34px;
   }
 }
+
+/* ===== Shared section styles ===== */
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  color: var(--lavender-dark);
+}
+
+.title-line {
+  width: 64px;
+  height: 4px;
+  background: #F2A7C3;
+  border-radius: 4px;
+}
+
+/* Background color helpers (reused later) */
+.bg-pink      { background: var(--pink); }
+.bg-pink-soft { background: var(--pink-soft); }
+.bg-blue      { background: var(--blue); }
+.bg-yellow    { background: var(--yellow); }
+.bg-lavender  { background: var(--lavender); }
+.bg-mint      { background: var(--mint); }
+
+/* ===== Shop by Occasion ===== */
+.occasion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+}
+
+.occasion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.occasion-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--ink-soft);
+  transition: transform 0.2s ease;
+}
+
+.occasion-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.occasion:hover .occasion-photo {
+  transform: scale(1.05);
+}
+
+.occasion span {
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--ink);
+}
