@@ -566,6 +566,53 @@ h1, h2, h3 {
   font-weight: 700;
   color: #8A2E5A;
 }
+
+ /* ===== Instagram / Gallery ===== */
+.insta-handle {
+  font-weight: 800;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.insta-handle:hover {
+  text-decoration: underline;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.insta-tile {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.insta-tile:hover {
+  transform: scale(1.03);
+}
+
+.insta-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insta-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
 /* ===== Phone & tablet layout (keep at the bottom) ===== */
 @media (max-width: 960px) {
   .hero-photo {
@@ -590,7 +637,7 @@ h1, h2, h3 {
   }
   .split-photo {
     min-height: 260px;
-  
+  }
   .split-text h2 {
     font-size: 32px;
   }
@@ -605,3 +652,5 @@ h1, h2, h3 {
     gap: 14px 18px;
   }
 }
+
+ 
